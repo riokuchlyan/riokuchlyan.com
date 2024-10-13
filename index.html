@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="scripts.js"></script>
+    <title>Rio Kuchlyan</title>
+  </head>
+
+  <body>
+    <main>
+
+      <div class="rectangle"> 
+        <h1 class="topLeft">Hello, welcome to my portfolio. Feel free to click the icons and links on the side to view my LinkedIn, explore my various projects, and more. 
+          <br>
+          <br>
+          <a class="smallLink" target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
+            <img src='./main-images/linkedinLogo.png'>
+          </a>
+          <a class="smallLink" target="_blank" href="mailto:rio.kuchlyan@unc.edu">
+            <img src='./main-images/mailLogo.png'>
+          </a>
+          <a class="smallLink" href="#" onclick="myWork()">
+            <img src='./main-images/workLogo.png'>
+          </a>
+        </h1>
+      </div>
+  
+  <div class="bottomRight"> 
+        <h2 id="name">Rio Kuchlyan</h2>
+    </div>
+
+    <div class="bottomLeft">
+      <p>
+        <a class="bottomLeftLink" target="_blank" href="mailto:rio.kuchlyan@unc.edu">Email</a>
+        <a class="bottomLeftLink" target="_blank" href="https://github.com/riokuchlyan">GitHub</a>
+        <a class="bottomLeftLink" target="_blank" href="https://replit.com/@riokuchlyan">Replit</a>
+      </p>
+    </div>
+
+    <div class="topRight">
+      <p>
+        <a class="topRightLink" href="#" onclick="home()">Home</a>
+        <a class="topRightLink" href="#" onclick="myWork()">Projects</a>
+        <a class="topRightLink" href="#" onclick="aboutMe()">About Me</a>
+      </p>
+    </div>
+  
+    <div id=myWork class="center">
+      <a href="#" onclick="passwordManager()">Password Manager</a><br><br>
+      <a href="#" onclick="nasServer()">NAS Server</a><br><br>
+      <a href="#" onclick="clipboardManager()">Clipboard Manager</a><br><br>
+      <a href="#" onclick="buildingThisWebsite()">Building This Website</a><br><br>
+      <a href="#" onclick="battleship()">Battleship</a><br><br>
+      <a href="#" onclick="webDesign()">Web Design</a><br><br>
+      <a href="#" onclick="graphicalCalculator()">Graphical Calculator and Drawing</a><br><br>
+      <a href="#" onclick="usingLinux()">Using Linux</a><br><br>
+      <a href="#" onclick="commonAlgorithms()">Common Algorithms</a><br><br>
+  </div>
+    
+    <div id=aboutMe class="center">
+      <p id="aboutMeText">
+        Hello! 
+        My name is Rio Kuchlyan and I am an aspiring developer who intends to work in the technology and banking industries. I am a student at the University of North Carolina at Chapel Hill pursuing a double major in computer science and business.
+        Feel free to contact me through any of my socials in this page!
+        <br>
+        <br>
+        <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
+          <img src='./main-images/linkedinLogo.png'>
+        </a>
+        <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
+          <img src='./main-images/mailLogo.png'>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/rio.kuchlyan/">
+          <img src='./main-images/instagramLogo.png'>
+        </a>
+      </p>  
+    </div>
+
+    <div class="projects" id="passwordManager">
+      <p>
+        Using Tkinter and the cryptography libraries in python, I created a password manager that works fully locally. It also encrypts the data to ensure that passwords are not stored in their raw format. Feel free to download the application installer and check out my code in this github link:
+        <br>
+        <br>
+        <a target="_blank" href="https://github.com/riokuchlyan/passwordManager">GitHub Password Manager</a>
+      </p>
+    </div>
+
+    <div class="projects" id="nasServer">
+      <p>For my NAS server, I wanted to create a cloud storage solution within my home so that my family would have enough storage, with the convenience of accessing it remotely. At first, I used a Raspberry Pi micro-computer to test out how the NAS server would work alongside a small SD card for storage.
+         </p>
+    </div>
+
+    <div class="projects" id="clipboardManager">
+      <p>I created this clipboard manager as unlike windows, MacOs does not have a dedicated clipboard manager. This program, which works on all operating systems, reads and writes to the clipboard using the subprocess library. The graphical user interface is then created using Tkinter. The textbox at the bottom lets users select what text from their clipboard history to copy. The code for this project is available on my Github page.
+        <br>
+        <br>
+        <a target="_blank" href="https://github.com/riokuchlyan/clipboardManager">GitHub Clipboard Manager</a>
+      </p>
+    </div>
+
+    <div class="projects" id="buildingThisWebsite">
+      <p>I had the idea to build this website as I was interested in various fields of computer science, whether it be building computers, software development, networking and more. Although these topics are all under computer science, they are vastly different and I wanted a way to represent all my interests in one common place. Through this website, I hope to inform others on the various aspects of computer science and also inspire others to build projects. Building this website was also a great learning experience, whether it be buying and managing domains, learning about DNS, and hosting the website. 
+        </p>
+    </div>
+    
+    <div class="projects" id="battleship">
+      <p>Initially part of a school project, I decided to expand a simple battleship code into the full game. It is text based but provides visuals on where ships are located and more. This game was made using java and multiple methods and classes are used to create this game. To access the game, click on the Repl link below. Note: Repl is an external site to host code and the servers can be slow at times. Please be patient if it takes some time.
+        <br>
+        <br>
+        <a target="_blank" href="https://replit.com/@riokuchlyan/Battleship?v=1">ReplIt Battleship</a>
+        </p>
+    </div>
+
+    <div class="projects" id="webDesign">
+      <p>Web design is a crucial element of website building as it determines how users will interact with your website. This can be making your website more aesthetically pleasing or other aspects such as Search Engine Optimization (SEO), which will land your website higher up in search results in engines such as Google, generating more users.  My web design portfolio below is a basic website with sub websites showcasing various elements of website building. I have built the website using an external free service called Neocities, which is a service often used to teach others about website building.  Note: Neocities is an external service and can be slow at times. Please be patient if the website takes time loading. 
+        <br>
+        <br>
+        <a target="_blank" href="https://riokuchlyan.neocities.org/"></a>
+        </p>
+    </div>
+
+    <div class="projects" id="graphicalCalculator">
+      <p>These projects use multiple methods and classes to function such as JOptionPane, loops, static variables, and more. The house drawing uses JFrame and the java.awt library to develop shapes and a graphical interface to showcase the graphics. The graphics are not the most appealing, but it showcases how graphics can be used by coding, often thought of as command line only skills by beginners.  Note: Repl is an external site to host code and the servers can be slow at times. Please be patient if it takes some time.
+        <br>
+        <br>
+        <a target="_blank" href="https://replit.com/@riokuchlyan/RioCalc?v=1"></a>
+      </p>
+    </div>
+
+    <div class="projects" id="usingLinux">
+      <p>There are many benefits to using Linux. One particular advantage is that it's open source, meaning its code and how it was built is available to the public. This is an advantage as unlike Windows and other operating systems, one does not need to pay to use Linux and it is additionally safer as open source developers are actively looking for points of failure. It can also be controlled fully from the command line making it useful for server use and it is a generally light operating system, not requiring as much hardware as other operating systems. This combined with its integration to many programming languages makes it an excellent choice for software developers. 
+      </p>
+    </div>
+
+    <div class="projects" id="commonAlgorithms">
+      <p>An algorithm is essentially a process to solve problems, and the order and steps of these actions determine how a problem is solved and the algorithm used. Here are some algorithms I made to solve various problems. 
+      </p>
+    </div>
+
+    </main>
+  </body>
+</html>

@@ -1,5 +1,3 @@
-screen.orientation.lock();
-
 function hide(){
     var projects = document.getElementsByClassName("projects");
     for (var i = 0; i < projects.length; i ++) {

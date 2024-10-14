@@ -6,12 +6,13 @@ body{
     background-attachment: fixed;
 }
 
-h1{
+#mainText{
     color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 10;
     padding: 5%;
-    font-size: 24px;
+    max-width: 55%;
+    font-size: 20px;
 }
 
 .rectangle{
@@ -28,7 +29,7 @@ h1{
     gap: 3px;
 }
 
-img{
+.mainImages{
     max-height: 30px;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
@@ -40,7 +41,6 @@ a{
     font-weight: 400;
     font-size: 16px;
     text-decoration: none;
-    
 }
 
 .bottomRight{
@@ -50,6 +50,8 @@ a{
 }
 
 .center{
+  max-height: 60%;
+  overflow-y: auto;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -90,7 +92,7 @@ a{
     color: aliceblue;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 10;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 p{
@@ -118,6 +120,8 @@ p{
 }
 
 .projects{
+  max-height: 60%;
+  overflow-y: auto;
   display: none;
   position: absolute;
   left: 50%;
@@ -129,6 +133,14 @@ p{
   padding: 40px;
   border-radius: 20px;
   width: 50%;
+}
+
+.projectLinks{
+  text-decoration: underline;
+}
+
+.projectImages{
+  max-height: 200px;
 }
 
 @media screen and (max-width: 600px) {
@@ -154,12 +166,22 @@ p{
   }
   .bottomRight{
     position: absolute;
-    bottom: 0%;
-    right: 25%;
+    bottom: -6%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); 
+    white-space: nowrap;
+    text-align: center;
   }
+  #name{font-size: 40px;}
   .topRight{
     position: absolute;
-    top: 2%;
-    right: 25%;
-}
+    left: 50%;
+    top: 6%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap ;
+    text-align: center; 
+  }
+  .topRightLink{font-size: 14px;}
 }

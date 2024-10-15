@@ -157,7 +157,6 @@ p{
     max-width: 100%;
     padding: 20px;
   }
- 
   #bottomRight{
     position: absolute;
     bottom: -6%;
@@ -179,9 +178,14 @@ p{
     white-space: nowrap ;
     text-align: center; 
   }
-  .topRightLink{font-size: 14px;}
+  .topRightLink{
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-height: 500px) {
-  #bottomLeft{display: none;}
+  #bottomLeft{
+    display: none;
+  }
 }
+

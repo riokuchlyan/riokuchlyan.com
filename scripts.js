@@ -23,8 +23,10 @@ function home(){
     projects.style.display="none";
     var name = document.getElementById("name");
     name.style.display="block";   
-    var bottomLeft = document.getElementById("bottomLeft");
-    bottomLeft.style.display = 'block';
+    if (this.document.documentElement.clientHeight>500){
+        var bottomLeft = document.getElementById("bottomLeft");
+        bottomLeft.style.display = 'block';
+    }
     var topLeft = document.getElementById("topLeft");
     topLeft.style.display = 'block';
 }

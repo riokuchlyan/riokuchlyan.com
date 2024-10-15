@@ -23,7 +23,11 @@ function home(){
     projects.style.display="none";
     var name = document.getElementById("name");
     name.style.display="block";   
-    if (this.document.documentElement.clientHeight>500){
+    if (this.document.documentElement.clientHeight<500){
+        var bottomLeft = document.getElementById("bottomLeft");
+        bottomLeft.style.display = 'none';
+    }
+    else{
         var bottomLeft = document.getElementById("bottomLeft");
         bottomLeft.style.display = 'block';
     }

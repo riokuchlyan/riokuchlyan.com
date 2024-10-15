@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles.css">
     <script src="scripts.js"></script>
@@ -14,43 +14,39 @@
   <body>
     <main>
 
-      <div class="rectangle"> 
-        <h1 id="mainText" class="topLeft">Hello, welcome to my portfolio. Feel free to click the icons and links on the side to view my LinkedIn, explore my various projects, and more. 
+      <div id="border"></div>
+
+      <div id="topLeft"> 
+        <h1 id="mainText">Hello, welcome to my portfolio. Feel free to click the icons and links on the side to view my LinkedIn, explore my various projects, and more.</h1>
           <br>
-          <br>
-          <a class="smallLink" target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
-            <img class='mainImages' src='./main-images/linkedinLogo.png'>
+          <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
+            <img class='logoImages' src='./main-images/linkedinLogo.png'>
           </a>
-          <a class="smallLink" target="_blank" href="mailto:rio.kuchlyan@unc.edu">
-            <img class='mainImages' src='./main-images/mailLogo.png'>
+          <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
+            <img class='logoImages' src='./main-images/mailLogo.png'>
           </a>
-          <a class="smallLink" href="#" onclick="myWork()">
-            <img class='mainImages' src='./main-images/workLogo.png'>
+          <a href="#" onclick="projects()">
+            <img class='logoImages' src='./main-images/workLogo.png'>
           </a>
-        </h1>
       </div>
   
-  <div class="bottomRight"> 
+  <div id="bottomRight"> 
         <h2 id="name">Rio Kuchlyan</h2>
     </div>
 
-    <div class="bottomLeft">
-      <p>
-        <a class="bottomLeftLink" target="_blank" href="mailto:rio.kuchlyan@unc.edu">Email</a>
-        <a class="bottomLeftLink" target="_blank" href="https://github.com/riokuchlyan">GitHub</a>
-        <a class="bottomLeftLink" target="_blank" href="https://replit.com/@riokuchlyan">Replit</a>
-      </p>
+    <div id="bottomLeft">
+        <a class="textLink" target="_blank" href="mailto:rio.kuchlyan@unc.edu">Email</a>
+        <a class="textLink" target="_blank" href="https://github.com/riokuchlyan">GitHub</a>
+        <a class="textLink" target="_blank" href="https://replit.com/@riokuchlyan">Replit</a>
     </div>
 
-    <div class="topRight">
-      <p>
-        <a class="topRightLink" href="#" onclick="home()">Home</a>
-        <a class="topRightLink" href="#" onclick="myWork()">Projects</a>
+    <div id="topRight">
+        <a class="textLink" href="#" onclick="home()">Home</a>
+        <a class="textLink" href="#" onclick="projects()">Projects</a>
         <a style="white-space: nowrap;" class="topRightLink" href="#" onclick="aboutMe()">About Me</a>
-      </p>
     </div>
   
-    <div id=myWork class="center">
+    <div id="projects" class="center">
       <a href="#" onclick="passwordManager()">Password Manager</a><br><br>
       <a href="#" onclick="nasServer()">NAS Server</a><br><br>
       <a href="#" onclick="clipboardManager()">Clipboard Manager</a><br><br>
@@ -63,25 +59,25 @@
   </div>
     
     <div id=aboutMe class="center">
-      <p id="aboutMeText">
+      <p>
         Hello! 
         My name is Rio Kuchlyan and I am an aspiring developer who intends to work in the technology and banking industries. I am a student at the University of North Carolina at Chapel Hill pursuing a double major in computer science and business.
         Feel free to contact me through any of my socials in this page!
         <br>
         <br>
         <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
-          <img class='mainImages' src='./main-images/linkedinLogo.png'>
+          <img class='logoImages' src='./main-images/linkedinLogo.png'>
         </a>
         <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
-          <img class='mainImages' src='./main-images/mailLogo.png'>
+          <img class='logoImages' src='./main-images/mailLogo.png'>
         </a>
         <a target="_blank" href="https://www.instagram.com/rio.kuchlyan/">
-          <img class='mainImages' src='./main-images/instagramLogo.png'>
+          <img class='logoImages' src='./main-images/instagramLogo.png'>
         </a>
       </p>  
     </div>
 
-    <div class="projects" id="passwordManager">
+    <div class="projectItem" id="passwordManager">
       <p>
         <img class="projectImages" src="./project-images/passwordManager.png">
         <br>
@@ -93,7 +89,7 @@
       </p>
     </div>
 
-    <div class="projects" id="nasServer">
+    <div class="projectItem" id="nasServer">
       <p>
         <img class="projectImages" src="./project-images/nasServer.jpeg">
         <br>
@@ -102,7 +98,7 @@
          </p>
     </div>
 
-    <div class="projects" id="clipboardManager">
+    <div class="projectItem" id="clipboardManager">
       <p>
         <img class="projectImages" src="./project-images/clipboardManager.png">
         <br>
@@ -114,12 +110,12 @@
       </p>
     </div>
 
-    <div class="projects" id="buildingThisWebsite">
+    <div class="projectItem" id="buildingThisWebsite">
       <p>I had the idea to build this website as I was interested in various fields of computer science, whether it be building computers, software development, networking and more. Although these topics are all under computer science, they are vastly different and I wanted a way to represent all my interests in one common place. Through this website, I hope to inform others on the various aspects of computer science and also inspire others to build projects. Building this website was also a great learning experience, whether it be buying and managing domains, learning about DNS, and hosting the website. 
         </p>
     </div>
     
-    <div class="projects" id="battleship">
+    <div class="projectItem" id="battleship">
       <p>Initially part of a school project, I decided to expand a simple battleship code into the full game. It is text based but provides visuals on where ships are located and more. This game was made using java and multiple methods and classes are used to create this game. To access the game, click on the Repl link below. Note: Repl is an external site to host code and the servers can be slow at times. 
         <br>
         <br>
@@ -127,7 +123,7 @@
         </p>
     </div>
 
-    <div class="projects" id="webDesign">
+    <div class="projectItem" id="webDesign">
       <p>Web design is a crucial element of website building as it determines how users will interact with your website. This can be making your website more aesthetically pleasing or other aspects such as Search Engine Optimization (SEO), which will land your website higher up in search results in engines such as Google, generating more users.  My web design portfolio below is a basic website with sub websites showcasing various elements of website building. I have built the website using an external free service called Neocities, which is a service often used to teach others about website building.  Note: Neocities is an external service and can be slow at times. 
         <br>
         <br>
@@ -135,7 +131,7 @@
         </p>
     </div>
 
-    <div class="projects" id="graphicalCalculator">
+    <div class="projectItem" id="graphicalCalculator">
       <p>These projects use multiple methods and classes to function such as JOptionPane, loops, static variables, and more. The house drawing uses JFrame and the java.awt library to develop shapes and a graphical interface to showcase the graphics. The graphics are not the most appealing, but it showcases how graphics can be used by coding, often thought of as command line only skills by beginners.  Note: Repl is an external site to host code and the servers can be slow at times.
         <br>
         <br>
@@ -143,7 +139,7 @@
       </p>
     </div>
 
-    <div class="projects" id="usingLinux">
+    <div class="projectItem" id="usingLinux">
       <p>
         <img class="projectImages" src="./project-images/linux.jpeg">
         <br>
@@ -152,7 +148,7 @@
       </p>
     </div>
 
-    <div class="projects" id="commonAlgorithms">
+    <div class="projectItem" id="commonAlgorithms">
       <p>An algorithm is essentially a process to solve problems, and the order and steps of these actions determine how a problem is solved and the algorithm used. Here are some algorithms I made to solve various problems. 
       <br>
       <br>

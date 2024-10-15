@@ -1,71 +1,42 @@
 function hide(){
-    var projects = document.getElementsByClassName("projects");
-    for (var i = 0; i < projects.length; i ++) {
-        projects[i].style.display = 'none';
+    var projectItem = document.getElementsByClassName("projectItem");
+    for (var i = 0; i < projectItem.length; i ++) {
+        projectItem[i].style.display = 'none';
     }
-    var myWork = document.getElementById("myWork");
-    myWork.style.display = "none";
-}
-
-function myWork() {
-    var projects = document.getElementsByClassName("projects");
-    for (var i = 0; i < projects.length; i ++) {
-        projects[i].style.display = 'none';
-    }   
+    var projects = document.getElementById("projects");
+    projects.style.display = "none";
     var name = document.getElementById("name");
     name.style.display="none";   
-    var bottomLeft = document.getElementsByClassName("bottomLeft");
-    for (var i = 0; i < bottomLeft.length; i ++) {
-        bottomLeft[i].style.display = 'none';
-    }   
-    var topLeft = document.getElementsByClassName("topLeft");
-    for (var i = 0; i < topLeft.length; i ++) {
-        topLeft[i].style.display = 'none';
-    }   
+    var bottomLeft = document.getElementById("bottomLeft");
+    bottomLeft.style.display = 'none'; 
+    var topLeft = document.getElementById("topLeft");
+    topLeft.style.display = 'none'; 
     var aboutMe = document.getElementById("aboutMe");
     aboutMe.style.display="none";
-    var myWork = document.getElementById("myWork");
-    myWork.style.display = "block";
-    }
-
-function home(){
-    var projects = document.getElementsByClassName("projects");
-    for (var i = 0; i < projects.length; i ++) {
-        projects[i].style.display = 'none';
-    }   
-    var name = document.getElementById("name");
-    name.style.display="block";   
-    var bottomLeft = document.getElementsByClassName("bottomLeft");
-    for (var i = 0; i < bottomLeft.length; i ++) {
-        bottomLeft[i].style.display = 'block';
-    }   
-    var topLeft = document.getElementsByClassName("topLeft");
-    for (var i = 0; i < topLeft.length; i ++) {
-        topLeft[i].style.display = 'block';
-    }   
-    var a = document.getElementById("aboutMe");
-    a.style.display="none";
-    var y = document.getElementById("myWork");
-    y.style.display="none";
 }
 
-function aboutMe(){
-    var projects = document.getElementsByClassName("projects");
-    for (var i = 0; i < projects.length; i ++) {
-        projects[i].style.display = 'none';
-    }   
+function home(){
+    hide()
+    var aboutMe = document.getElementById("aboutMe");
+    aboutMe.style.display="none";
+    var projects = document.getElementById("projects");
+    projects.style.display="none";
     var name = document.getElementById("name");
-    name.style.display="none";   
-    var bottomLeft = document.getElementsByClassName("bottomLeft");
-    for (var i = 0; i < bottomLeft.length; i ++) {
-        bottomLeft[i].style.display = 'none';
-    }   
-    var topLeft = document.getElementsByClassName("topLeft");
-    for (var i = 0; i < topLeft.length; i ++) {
-        topLeft[i].style.display = 'none';
-    }   
-    var myWork = document.getElementById("myWork");
-    myWork.style.display="none";      
+    name.style.display="block";   
+    var bottomLeft = document.getElementById("bottomLeft");
+    bottomLeft.style.display = 'block';
+    var topLeft = document.getElementById("topLeft");
+    topLeft.style.display = 'block';
+}
+
+function projects() {
+    hide()
+    var projects = document.getElementById("projects");
+    projects.style.display = "block";
+    }
+
+function aboutMe(){
+    hide()   
     var aboutMe = document.getElementById("aboutMe");
     aboutMe.style.display = "block";
 }  

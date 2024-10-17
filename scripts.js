@@ -88,15 +88,3 @@ function graphicalCalculator(){
     var graphicalCalculator = document.getElementById("graphicalCalculator");
     graphicalCalculator.style.display="block";
 }
-
-function usingLinux(){
-    hide()
-    var usingLinux = document.getElementById("usingLinux");
-    usingLinux.style.display="block";
-}
-
-function commonAlgorithms(){
-    hide()
-    var commonAlgorithms = document.getElementById("commonAlgorithms");
-    commonAlgorithms.style.display="block";
-}

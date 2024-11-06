@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Hello, welcome to my portfolio. Feel free to click the icons and links to view my LinkedIn, explore my various projects, and learn more about me.">
     <link rel="stylesheet" href="./styles.css">
     <script src="scripts.js"></script>
     <title>Rio Kuchlyan</title>
-    <link rel="icon" href="./main-images/logo-white.png">
+    <link rel="icon" href="./main-assets/logo-white.png">
   </head>
 
   <body>
@@ -17,21 +18,20 @@
       <div id="border"></div>
 
       <div id="topLeft"> 
-        <h1 id="mainText">Hello, welcome to my portfolio. Feel free to click the icons and links on the side to view my LinkedIn, explore my various projects, and more.</h1>
-          <br>
+        <p id="mainText">Hello, welcome to my portfolio. Feel free to click the icons and links to view my LinkedIn, explore my various projects, and learn more about me.</p>
           <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
-            <img class='logoImages' src='./main-images/linkedinLogo.png'>
+            <img class='logoImages' src='./main-assets/linkedinLogo.png'>
           </a>
           <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
-            <img class='logoImages' src='./main-images/mailLogo.png'>
+            <img class='logoImages' src='./main-assets/mailLogo.png'>
           </a>
           <a href="#" onclick="projects()">
-            <img class='logoImages' src='./main-images/workLogo.png'>
+            <img class='logoImages' src='./main-assets/workLogo.png'>
           </a>
       </div>
   
   <div id="bottomRight"> 
-        <h2 id="name">Rio Kuchlyan</h2>
+        <p id="name">Rio Kuchlyan</p>
     </div>
 
     <div id="bottomLeft">
@@ -64,20 +64,33 @@
         <br>
         <br>
         <a target="_blank" href="https://www.linkedin.com/in/riokuchlyan">
-          <img class='logoImages' src='./main-images/linkedinLogo.png'>
+          <img class='logoImages' src='./main-assets/linkedinLogo.png'>
         </a>
         <a target="_blank" href="mailto:rio.kuchlyan@unc.edu">
-          <img class='logoImages' src='./main-images/mailLogo.png'>
+          <img class='logoImages' src='./main-assets/mailLogo.png'>
         </a>
         <a target="_blank" href="https://www.instagram.com/rio.kuchlyan/">
-          <img class='logoImages' src='./main-images/instagramLogo.png'>
+          <img class='logoImages' src='./main-assets/instagramLogo.png'>
         </a>
+        <br>
+        <br>
+        <a class="projectLinks" href="#" onclick="myVisitedPlaces()">Countries I've Visited</a>
+        <br>
+        <a class="projectLinks" target="_blank" href="mailto:rio.kuchlyan@unc.edu">Email: rio.kuchlyan@unc.edu</a>
+        <br>
+        <a class="projectLinks" target="_blank" href="mailto:contact@riokuchlyan.com">Website Inquiries: contact@riokuchlyan.com</a>
       </p>  
+    </div>
+
+    <div id="myVisitedPlaces" class="center">
+      <video width=100% controls>
+        <source src="./main-assets/myVisitedPlaces.mp4" type="video/mp4">
+      </video>
     </div>
 
     <div class="projectItem" id="passwordManager">
       <p>
-        <img class="projectImages" src="./project-images/passwordManager.png">
+        <img class="projectImages" src="./project-assets/passwordManager.png">
         <br>
         <br>
         Using Tkinter and the cryptography libraries in python, I created a password manager that works fully locally. It also encrypts the data to ensure that passwords are not stored in their raw format. Feel free to download the application installer and check out my code in this github link:
@@ -89,7 +102,7 @@
 
     <div class="projectItem" id="nasServer">
       <p>
-        <img class="projectImages" src="./project-images/nasServer.jpeg">
+        <img class="projectImages" src="./project-assets/nasServer.jpeg">
         <br>
         <br>
         For my NAS server, I wanted to create a cloud storage solution within my home so that my family would have enough storage, with the convenience of accessing it remotely. At first, I used a Raspberry Pi micro-computer to test out how the NAS server would work alongside a small SD card for storage.
@@ -98,7 +111,7 @@
 
     <div class="projectItem" id="clipboardManager">
       <p>
-        <img class="projectImages" src="./project-images/clipboardManager.png">
+        <img class="projectImages" src="./project-assets/clipboardManager.png">
         <br>
         <br>
         I created this clipboard manager as unlike windows, MacOs does not have a dedicated clipboard manager. This program, which works on all operating systems, reads and writes to the clipboard using the subprocess library. The graphical user interface is then created using Tkinter. The textbox at the bottom lets users select what text from their clipboard history to copy. The code for this project is available on my Github page.
@@ -110,6 +123,9 @@
 
     <div class="projectItem" id="buildingThisWebsite">
       <p>I had the idea to build this website as I was interested in various fields of computer science, whether it be building computers, software development, networking and more. Although these topics are all under computer science, they are vastly different and I wanted a way to represent all my interests in one common place. Through this website, I hope to inform others on the various aspects of computer science and also inspire others to build projects. Building this website was also a great learning experience, whether it be buying and managing domains, learning about DNS, and hosting the website. 
+        <br>
+        <br>
+        <a class="projectLinks" target="_blank" href="https://github.com/riokuchlyan/riokuchlyan.com">GitHub riokuchlyan.com</a>
         </p>
     </div>
     
@@ -125,7 +141,7 @@
       <p>Web design is a crucial element of website building as it determines how users will interact with your website. This can be making your website more aesthetically pleasing or other aspects such as Search Engine Optimization (SEO), which will land your website higher up in search results in engines such as Google, generating more users.  My web design portfolio below is a basic website with sub websites showcasing various elements of website building. I have built the website using an external free service called Neocities, which is a service often used to teach others about website building.  Note: Neocities is an external service and can be slow at times. 
         <br>
         <br>
-        <a class="projectLinks" target="_blank" href="https://riokuchlyan.neocities.org/">Web Design</a>
+        <a class="projectLinks" target="_blank" href="./project-assets/webDesign/webDesign.html">Web Design</a>
         </p>
     </div>
 

@@ -13,6 +13,8 @@ function hide(){
     topLeft.style.display = 'none'; 
     var aboutMe = document.getElementById("aboutMe");
     aboutMe.style.display="none";
+    var myVisitedPlaces = document.getElementById("myVisitedPlaces");
+    myVisitedPlaces.style.display="none";
 }
 
 function home(){
@@ -33,6 +35,12 @@ function home(){
     }
     var topLeft = document.getElementById("topLeft");
     topLeft.style.display = 'block';
+}
+
+function myVisitedPlaces(){
+    hide()
+    var myVisitedPlaces = document.getElementById("myVisitedPlaces");
+    myVisitedPlaces.style.display="block";
 }
 
 function projects() {

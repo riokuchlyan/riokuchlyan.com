@@ -1,0 +1,154 @@
+body {
+    background-color:#000000;
+    font-family: 'Courier New', monospace;
+    font-size:37px;
+    color:#FFFFFF;  
+    margin-left:0;
+    margin-right:0;
+  }
+  
+  #nav {
+    margin:0;
+    padding:25px;
+    background-color:transparent ;
+    height:auto;
+    width:auto;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  #indexintro {
+   border:solid;
+   background-color:transparent;
+   border-color:#000000;
+  }
+  
+  h1 {
+    margin:30px;
+    font-size:160px;
+    background-color:#000000; 
+    color:#FFFFFF; 
+    padding:10px; 
+    text-align:center;
+    font-family: 'Courier New', monospace;
+  }
+    
+  h2 {
+   text-align:center; 
+   text-decoration:underline;
+  }
+  
+  img {                    
+  margin:30px; 
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  height: auto; 
+  }
+  
+  p {          
+ padding:30px;
+ text-align:center; 
+ margin:30px;
+ margin-left:0;
+ margin-right:0;
+ color:#FFFFFF;
+  }
+  
+a {
+color:#FFFFFF;
+background-color:#000000;
+margin:5px;
+}
+
+#gethelp {
+ align-items:center;
+ border:solid;
+ border-color:#FFFFFF;
+ margin:30px;
+ margin-top:30px;
+ margin-bottom:30px;
+}
+
+.normalheader {
+ margin:0;
+ padding:0;
+ font-size:72px;
+ border:none;
+ padding-top:20px;
+}
+
+.pinsidediv {
+ border:none;
+ padding:30px;
+ padding-bottom:0;
+}
+
+form {
+ text-align:center;
+ margin:50px;
+ margin-top:0;
+ border:none;
+}
+
+#imageofspecifics {
+ margin:100px;
+ margin-top:0;
+ padding:50px;
+}
+
+li {
+margin-left:35%;
+}
+
+.list {
+ list-style-type:circle; 
+  
+}
+
+#introimage {
+ width:800px; height:auto; 
+}
+
+          table {
+            border: 1px solid white;
+            border-collapse:collapse;
+            padding:20px;
+            margin-left: auto;
+            margin-right: auto;
+              width: 50%;
+  max-width: 100%;
+  height: auto; 
+          }
+          
+          th {
+            border: 1px solid white;
+            border-collapse:collapse;
+           text-decoration:underline; 
+            padding:20px;
+          }
+          
+          tr {
+            border: 1px solid white;
+            border-collapse:collapse;
+            background-color:#000000;
+            color:#FFFFFF;
+          }
+          
+          caption {
+           background-color:#23395d;
+           color:#FFFFFF;
+            border-collapse:collapse;
+            border:solid;
+            border-width:20px;
+            border-bottom:none;
+            border-color:#152238;
+            padding:16px; 
+          }
+          td {
+            border: 1px solid white;
+            border-collapse:collapse;
+           padding:16px; 
+          }

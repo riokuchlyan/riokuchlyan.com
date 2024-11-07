@@ -45,7 +45,7 @@ For more details, please refer to the [LICENSE](./LICENSE) file.
 ## Acknowledgements
 
 - **Inspiration:** Inspired by various developer portfolio designs found online.
-- **Resources:** Used resources like [Google Fonts](https://fonts.google.com/) and [Font Awesome](https://fontawesome.com/) for typography and icons.
+- **Resources:** Background: Designed by [Freepik](http://www.freepik.com/).
 - **Feedback:** A big thank you to anyone who provided valuable feedback on my portfolio during development.
 
 ---

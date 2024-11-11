@@ -96,3 +96,9 @@ function graphicalCalculator(){
     var graphicalCalculator = document.getElementById("graphicalCalculator");
     graphicalCalculator.style.display="block";
 }
+
+function stockTracker(){
+    hide()
+    var stockTracker = document.getElementById("stockTracker")
+    stockTracker.style.display="block";
+}
